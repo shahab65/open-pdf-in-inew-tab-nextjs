@@ -1,17 +1,11 @@
 import styles from "./page.module.css";
 
 export default function Home() {
+  const pdfUrl = "http://localhost:3001/pdf";
   return (
     <main className={styles.main}>
-      <a
-        href="http://localhost:3001/pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
         open pdf directly
-      </a>
-      <a href="/api/pdf" target="_blank" rel="noopener noreferrer">
-        open pdf from api
       </a>
     </main>
   );
