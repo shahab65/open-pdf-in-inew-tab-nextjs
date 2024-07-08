@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-        open pdf directly
+        open pdf in new tab
       </a>
     </main>
   );
