@@ -5,7 +5,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-        open pdf in new tab
+        from nodejs
+      </a>
+      <a
+        href={`/api/pdf?pdfUrl=${pdfUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        from nextjs api
       </a>
     </main>
   );
